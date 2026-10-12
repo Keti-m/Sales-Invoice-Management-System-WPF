@@ -1,0 +1,70 @@
+﻿<Window x:Class="SaleInvoice.AddFaturaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Fatura" Height="700" Width="600">
+    <ScrollViewer>
+        <Grid Margin="10">
+            <StackPanel>
+
+                <!-- NR -->
+                <Label Content="NR"/>
+                <TextBox x:Name="txtNR" Margin="5"/>
+
+                <!-- Nr Serisa -->
+                <Label Content="Nr Serise"/>
+                <TextBox x:Name="txtNrSerise" Margin="5"/>
+
+                <!-- Nr Fature -->
+                <Label Content="Nr Fature"/>
+                <TextBox x:Name="txtNrFature" Margin="5"/>
+
+                <!-- Data -->
+                <Label Content="Data"/>
+                <DatePicker x:Name="dpData" Margin="5"/>
+
+                <!-- Qyteti -->
+                <Label Content="Qyteti"/>
+                <ComboBox x:Name="cmbQyteti" Margin="5"/>
+
+                <!-- Klienti -->
+                <Label Content="Klienti"/>
+                <ComboBox x:Name="cmbKlienti" Margin="5"/>
+
+                <!-- Adresa -->
+                <Label Content="Adresa"/>
+                <ComboBox x:Name="cmbAdresa" Margin="5"/>
+
+                <!-- NIPT_ID -->
+                <Label Content="NIPT/ID"/>
+                <TextBox x:Name="txtNIPT" Margin="5"/>
+
+                <!-- Totali -->
+                <Label Content="Totali"/>
+                <TextBox x:Name="txtTotali" Margin="5"/>
+
+                <!-- Totali Mon Baze -->
+                <Label Content="Totali Mon Baze"/>
+                <TextBox x:Name="txtTotaliMonBaze" Margin="5"/>
+
+                <!-- Pagesa Total -->
+                <Label Content="Pagesa Total"/>
+                <TextBox x:Name="txtPagesaTotal" Margin="5"/>
+
+                <!-- Valuta -->
+                <Label Content="Valuta"/>
+                <ComboBox x:Name="cmbValuta" Margin="5">
+                    <ComboBoxItem Content="EUR"/>
+                    <ComboBoxItem Content="USD"/>
+                    <ComboBoxItem Content="ALL"/>
+                </ComboBox>
+
+                <!-- Shenim -->
+                <Label Content="Shenim"/>
+                <TextBox x:Name="txtShenim" Margin="5"/>
+
+                <!-- Butoni Ruaj -->
+                <Button Content="Ruaj" Margin="10" Padding="5" Click="BtnSave_Click"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

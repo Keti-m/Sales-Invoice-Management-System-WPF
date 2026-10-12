@@ -1,0 +1,59 @@
+﻿<Window x:Class="SaleInvoice.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaleInvoice"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="800">
+    <StackPanel Margin="90"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center">
+
+        <!-- Welcome + Image -->
+        <StackPanel Orientation="Horizontal"
+                Margin="0,0,0,10"
+                HorizontalAlignment="Center">
+
+            <Label Content="Welcome"
+               FontSize="24"
+               VerticalAlignment="Center"/>
+
+           
+        </StackPanel>
+
+        <!-- Username -->
+        <TextBox Name="txtUsername"
+             Width="300"
+             Margin="0,0,0,10"/>
+
+        <!-- Password (PasswordBox) -->
+        <TextBox Name="txtPassword"
+                 Width="300"
+                 Margin="0,0,0,10"/>
+
+        <!-- Terms -->
+        <CheckBox Name="chkTerms"
+              Margin="0,0,0,5">
+            E lexova dhe bie dakord me termat dhe kushtet
+        </CheckBox>
+
+        <!-- Credentials -->
+        <CheckBox Name="chkCredentials"
+              Margin="0,0,0,10">
+            Ruaj kredencialet
+        </CheckBox>
+
+        <!-- Button -->
+        <Button Content="Identifikohu"
+            Width="150"
+            Height="40"
+            HorizontalAlignment="Center"
+            Background="DodgerBlue"
+            Foreground="White"
+            Cursor="Hand"
+            Click="Button_Click"/>
+    </StackPanel>
+
+
+</Window>

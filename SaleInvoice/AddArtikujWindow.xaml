@@ -1,0 +1,97 @@
+﻿<Window x:Class="SaleInvoice.AddArtikujWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Artikuj" Height="700" Width="600">
+    <ScrollViewer>
+        <Grid Margin="10">
+            <StackPanel>
+
+                <!-- Kodi i Artikullit -->
+                <Label Content="Kodi i Artikullit"/>
+                <TextBox x:Name="txtKodiArtikuj" Margin="5" />
+
+                <!-- Emri -->
+                <Label Content="Emri"/>
+                <TextBox x:Name="txtEmri" Margin="5"/>
+
+                <!-- Pershkrimi -->
+                <Label Content="Pershkrimi"/>
+                <TextBox x:Name="txtPershkrimi" Margin="5"/>
+
+                <!-- Barkodi -->
+                <Label Content="Barkodi"/>
+                <TextBox x:Name="txtBarkodi" Margin="5"/>
+
+                <!-- Cmimi i Shitjes -->
+                <Label Content="Cmimi i Shitjes"/>
+                <TextBox x:Name="txtCmimiShitjes" Margin="5"/>
+
+                <!-- Valuta e Shitjes -->
+                <Label Content="Valuta e Shitjes"/>
+                <ComboBox x:Name="cmbValutaShitjes" Margin="5">
+                    <ComboBoxItem Content="EUR"/>
+                    <ComboBoxItem Content="USD"/>
+                    <ComboBoxItem Content="ALL"/>
+                </ComboBox>
+
+                <!-- Me TVSH Shitje -->
+                <CheckBox x:Name="chkMeTVSHShitje" Content="Me TVSH Shitje" Margin="5"/>
+
+                <!-- Cmimi i Blerjes -->
+                <Label Content="Cmimi i Blerjes"/>
+                <TextBox x:Name="txtCmimiBlerjes" Margin="5"/>
+
+                <!-- Valuta e Blerjes -->
+                <Label Content="Valuta e Blerjes"/>
+                <ComboBox x:Name="cmbValutaBlerjes" Margin="5">
+                    <ComboBoxItem Content="EUR"/>
+                    <ComboBoxItem Content="USD"/>
+                    <ComboBoxItem Content="ALL"/>
+                </ComboBox>
+
+                <!-- Me TVSH Blerje -->
+                <CheckBox x:Name="chkMeTvshBlerje" Content="Me TVSH Blerje" Margin="5"/>
+
+                <!-- TVSH% -->
+                <Label Content="TVSH%"/>
+                <TextBox x:Name="txtTVSH" Margin="5"/>
+
+                <!-- Njesia -->
+                <Label Content="Njesia"/>
+                <ComboBox x:Name="cmbNjesia" Margin="5">
+                    <ComboBoxItem Content="Copë"/>
+                    <ComboBoxItem Content="Kg"/>
+                    <ComboBoxItem Content="Liter"/>
+                </ComboBox>
+
+                <!-- Lloji -->
+                <Label Content="Lloji"/>
+                <ComboBox x:Name="cmbLloji" Margin="5">
+                    <ComboBoxItem Content="Produkt"/>
+                    <ComboBoxItem Content="Shërbim"/>
+                </ComboBox>
+
+                <!-- Skema e Llogarise -->
+                <Label Content="Skema e Llogarise"/>
+                <ComboBox x:Name="cmbSkemaLlogarise" Margin="5">
+                    <ComboBoxItem Content="Standard"/>
+                    <ComboBoxItem Content="Special"/>
+                </ComboBox>
+
+                <!-- Garancia -->
+                <Label Content="Garancia (Muaj)"/>
+                <TextBox x:Name="txtGarancia" Margin="5"/>
+
+                <!-- Keyword -->
+                <Label Content="Keyword"/>
+                <TextBox x:Name="txtKeyword" Margin="5"/>
+
+                <!-- Aktiv -->
+                <CheckBox x:Name="chkAktiv" Content="Aktiv" Margin="5"/>
+
+                <!-- Butoni Ruaj -->
+                <Button Content="Ruaj" Margin="10" Padding="5" Click="BtnSave_Click"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>
